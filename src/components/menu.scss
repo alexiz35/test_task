@@ -1,0 +1,57 @@
+@import "var.scss";
+
+.topHeader {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(22, 22, 22, 1);
+    display: flex;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    height: 26px;
+    width: 104px;
+    justify-self: flex-start;
+    margin-left: 16px;
+    margin-top: 17px;
+    @media all and (min-width: 768px){
+        margin-left: 32px;
+    }
+    @media all and (min-width: 1024px){
+        margin-left: 60px;
+    }
+    @media all and (min-width: 2560px){
+        margin-left: 695px;
+    }
+}
+.buttongroup {
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-between;
+    width: 210px;
+    height: 34px;
+    margin-right: 16px;
+    margin-top: 13px;
+    @media all and (min-width: 768px){
+        margin-right: 32px;
+    }
+    @media all and (min-width: 1024px){
+        margin-right: 60px;
+    }
+    @media all and (min-width: 2560px){
+        margin-right: 695px;
+    }
+}
+.buttonMenu {
+    @include button;
+}

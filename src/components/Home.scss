@@ -1,0 +1,114 @@
+@import "var.scss";
+
+.bg360{
+    background: $bg_grey;
+    height: 3619px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+
+/*---------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+.main {
+    position: absolute;
+    margin:  0 auto;
+    width: 100%;
+    top: 120px;
+    gap: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frameCards {
+    padding: 0;
+    position: static;
+    width: 328px;
+    @media all and (min-width: 768px){
+        width: 704px;
+        height: 968px;
+    }
+    @media all and (min-width: 1024px){
+        width: 904px;
+        height: 711px;
+    }
+    @media all and (min-width: 2560px){
+        width: 1168px;
+        height: 711px;
+    }
+
+    left: 16px;
+    top: 640px;
+    gap: 50px;
+    /*border: black 1px solid;*/
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.frameTopCard {
+    position: static;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+}
+
+.titleCard {
+    position: static;
+    width: 100%;
+
+
+    text-align: center;
+    color: $black87;
+
+}
+.cards {
+    position: static;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 20px;
+    @media all and (min-width: 768px){
+        width: 704px;
+        height: 794px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,min(344px));
+        grid-gap: 16px;
+    }
+    @media all and (min-width: 1024px){
+        width: 904px;
+        height: 537px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,min(282px));
+        grid-gap: 29px;
+    }
+    @media all and (min-width: 2560px){
+        width: 1168px;
+        height: 537px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,min(370px));
+        grid-gap: 29px;
+    }
+
+}
+
+.buttonCard {
+    @include button;
+    position: static;
+    width: 120px;
+    height: 34px;
+    top: 1804px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+

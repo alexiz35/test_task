@@ -1,0 +1,39 @@
+$bg_yellow: #F4E041;
+$bg_grey: #F8F8F8;
+$bg_blue: #00BDD3;
+$black87: rgba(0, 0, 0, 0.87);
+$white87: rgba(255, 255, 255, 0.87);
+$error: #CB3D40;
+
+$bg_button_hover: rgba(255, 227, 2, 1);
+$bg_button_normal: rgba(244, 224, 65, 1);
+$bg_button_disable: rgba(180, 180, 180, 1);
+
+@mixin button {
+  width: 100px;
+  height: 34px;
+  border-radius: 80px;
+  border: 0;
+  background: $bg_button_normal;
+  color: $black87;
+  text-align: center;
+  @include font_p1;
+
+  &:hover {
+    background-color: $bg_button_hover;
+    color: $black87;
+  }
+  &:disabled {
+    background-color: $bg_button_disable;
+    color: $white87;
+  }
+}
+
+$font_inactive: #7E7E7E;
+
+@mixin font_p1 {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+}

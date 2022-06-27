@@ -1,0 +1,127 @@
+.imgStyle {
+  width: 100%;
+  height: 500px;
+  left: 0;
+  /*display: block;*/
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/pexels-alexandr-podvalny-1227513.jpeg");
+  background-size: cover;
+}
+@media all and (min-width: 1024px) {
+  .imgStyle {
+    height: 650px;
+  }
+}
+
+.mainFrame {
+  position: absolute;
+  width: 328px;
+  height: 389px;
+  top: 40px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media all and (min-width: 768px) {
+  .mainFrame {
+    width: 380px;
+    top: 89px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .mainFrame {
+    width: 380px;
+    top: 164px;
+  }
+}
+
+.frameImg {
+  position: static;
+  width: 100%;
+  height: 500px;
+}
+@media all and (min-width: 1024px) {
+  .frameImg {
+    height: 650px;
+  }
+}
+
+.groupFrames {
+  width: 100%;
+  /*height: 500px;*/
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inFrame {
+  position: static;
+  /*width: 328px;
+  height: 389px;*/
+  /*top: 40px;*/
+  /*left: 16px;*/
+  gap: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textFrame {
+  width: 100%;
+  position: static;
+  gap: 21px;
+  /*padding-top: 8px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text1 {
+  position: static;
+  width: 100%;
+  /*font-size: 40px;*/
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.text2 {
+  width: 100%;
+  /*height: 128px;*/
+  top: 141px;
+  /*font-size: 16px;*/
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.buttonImg {
+  /*  @media all and (min-width:768px) and (max-width:1024px){
+        width: 148px;
+        height: 50px;
+    }*/
+  position: static;
+  top: 355px;
+  left: 114px;
+  width: 100px;
+  height: 34px;
+  border-radius: 80px;
+  border: 0;
+  background: rgb(244, 224, 65);
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+}
+.buttonImg:hover {
+  background-color: rgb(255, 227, 2);
+  color: rgba(0, 0, 0, 0.87);
+}
+.buttonImg:disabled {
+  background-color: rgb(180, 180, 180);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/*# sourceMappingURL=imageframe.css.map */

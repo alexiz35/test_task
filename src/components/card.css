@@ -1,0 +1,98 @@
+.frameCard {
+  width: 328px;
+  height: 254px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+@media all and (min-width: 768px) {
+  .frameCard {
+    width: 344px;
+    height: 254px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .frameCard {
+    width: 282px;
+    height: 254px;
+  }
+}
+@media all and (min-width: 2560px) {
+  .frameCard {
+    width: 370px;
+    height: 254px;
+  }
+}
+
+.borderCard {
+  position: static;
+  left: 20px;
+  margin-top: 20px;
+  gap: 20px;
+  width: 288px;
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.userIco {
+  position: static;
+  top: 20px;
+  width: 70px;
+  height: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.nameCard {
+  position: static;
+  width: 288px;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  margin: 0 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.textCard {
+  position: static;
+  width: 288px;
+  top: 136px;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  margin: 0 20px;
+}
+
+.wrap {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3px 16px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 21px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=card.css.map */

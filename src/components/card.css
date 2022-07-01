@@ -1,3 +1,12 @@
+.p1 {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  /*padding: 0 20px;
+  text-overflow: ellipsis;*/
+}
+
 .frameCard {
   width: 328px;
   height: 254px;
@@ -77,6 +86,15 @@
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.wrapText {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 0 20px;
+  text-overflow: ellipsis;
 }
 
 .tooltip .tooltiptext {

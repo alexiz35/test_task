@@ -23,7 +23,7 @@ function App() {
         },
         users: [],
     });
-    const [error, setError] = useState(null);
+    /*const [error, setError] = useState(null);*/
     const [loading, setLoading] = useState(true)
     const [stateButton, setStateButton] = useState(false)
 
@@ -34,20 +34,15 @@ function App() {
                 (result) => {
                     setData(result);
                     setLoading(false)
-                },
-                (error) => {
-                    setError(error);
-                    console.log('ERROR: ', error)
-                }
-            )
+                })
+            .catch((error) => {
+                console.log("Ошибка загрузки")
+            })
     }
 
     function handleClick() {
         setLoading(false)
         getUsers()
-        console.log("page:", data.page)
-        console.log("countPage:", data.total_pages)
-        console.log("countUsers", data.total_users)
 
         if (data.total_pages - data.page === 1) setStateButton(true)
 
@@ -59,45 +54,47 @@ function App() {
     }, [])
 
 
-  return (
-    <div className={"bg360"}>
+    return (
+        <div className={"bg360"}>
 
-      <header>
-        <Menu/>
-      </header>
+            <header>
+                <Menu/>
+            </header>
 
-        <main className={"main"}>
+            <main className={"main"}>
 
-            <Imageframe/>
+                <Imageframe/>
 
 
-            <div className={"frameCards"} id={"Users"}>
-                <div className={"frameTopCard"}>
-                    <div className={"titleCard"}>
-                        <h1>Working with GET request</h1>
-                        {loading && <Loader/>}
+                <div className={"frameCards"} id={"Users"}>
+                    <div className={"frameTopCard"}>
+                        <div className={"titleCard"}>
+                            <h1>Working with GET request</h1>
+                            {loading && <Loader/>}
+                        </div>
+                        <div className={"cards"}>
+
+                            {data.users.map((user) =>
+                                <Card
+                                    key={user.id}
+                                    data={user}
+                                />
+                            )}
+                        </div>
                     </div>
-                    <div className={"cards"}>
+                    <button className={"buttonCard"} onClick={handleClick} disabled={stateButton}>
+                        <div className={"p1"}>Show more</div>
+                    </button>
 
-                        {data.users.map((user) => (
-                            /*console.log("re:",user)*/
-                            <Card data={user}/>
-                        ))}
-                    </div>
                 </div>
-                <button className={"buttonCard"} onClick={handleClick} disabled={stateButton}>
-                    <p1>Show more</p1>
-                </button>
 
-            </div>
+                <FormRegister/>
 
-            <FormRegister />
-
-        </main>
+            </main>
 
 
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

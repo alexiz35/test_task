@@ -11,10 +11,10 @@ export default function Menu() {
                 </div>
                 <div className={"buttongroup"}>
                     <button className={"buttonMenu"}>
-                        <p1><a href={'#Users'}> Users</a></p1>
+                        <span className={"p1"}><a href={'#Users'}> Users</a></span>
                     </button>
                     <button className={"buttonMenu"}>
-                        <p1>Sign up</p1>
+                        <span className={"p1"}><a href={'#SignUp'}> Sign Up</a></span>
                     </button>
                 </div>
             </div>

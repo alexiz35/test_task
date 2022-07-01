@@ -76,6 +76,14 @@
   white-space: nowrap;
   cursor: pointer;
 }
+.wrapText {
+  font-family:  Nunito;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 0 20px;
+  text-overflow: ellipsis;
+}
 
 .tooltip .tooltiptext {
   visibility: hidden;

@@ -18,9 +18,9 @@ export default function Card(props) {
                     <div className={"nameCard"}>
                         <div className={"tooltip"}>
                             <div className={"wrap"}>
-                                <p1>
+                                <span className={"wrapText"}>
                                     {props.data.name}
-                                </p1>
+                                </span>
                             </div>
                             <span className={"tooltiptext"}>{props.data.name}</span>
                         </div>
@@ -28,19 +28,19 @@ export default function Card(props) {
                     <div className={"textCard"}>
                         <div className={"tooltip"}>
                             <div className={"wrap"}>
-                                <p1>{props.data.position}</p1>
+                                <span className={"wrapText"}>{props.data.position}</span>
                             </div>
                             <span className={"tooltiptext"}>{props.data.position}</span>
                         </div>
                         <div className={"tooltip"}>
                             <div className={"wrap"}>
-                                <p1>{props.data.email}</p1>
+                                <span className={"wrapText"}>{props.data.email}</span>
                             </div>
                             <span className={"tooltiptext"}>{props.data.email}</span>
                         </div>
                         <div className={"tooltip"}>
                             <div className={"wrap"}>
-                                <p1>{props.data.phone}</p1>
+                                <span className={"wrapText"}>{props.data.phone}</span>
                             </div>
                             <span className={"tooltiptext"}>{props.data.phone}</span>
                         </div>

@@ -13,15 +13,15 @@ export default function Imageframe() {
                             <h1>Test assignment for front-end developer</h1>
                         </div>
                         <div className={"text2"}>
-                            <p1>What defines a good front-end developer is one that has skilled knowledge of HTML, CSS,
+                            <div className={"p1"}>What defines a good front-end developer is one that has skilled knowledge of HTML, CSS,
                                 JS with a vast understanding of User design thinking as they'll be building web
                                 interfaces with accessibility in mind. They should also be excited to learn, as the
                                 world of Front-End Development keeps evolving.
-                            </p1>
+                            </div>
                         </div>
                     </div>
                     <button className={"buttonImg"}>
-                        <p1>Sign up</p1>
+                        <div className={"p1"}><a href={'#SignUp'}> Sign Up</a></div>
                     </button>
 
                 </div>
